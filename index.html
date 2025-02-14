@@ -923,7 +923,7 @@
               fire.delay = Math.round(Math.random() * range) + range * 4;
               fire.vx = fire.base.vx;
               fire.vy = fire.base.vy;
-              fire.ax = Math.random() * 0.06 - 0.03;
+              fire.ax = Math.random() * 0.06 - 0.05;
               fire.alpha = 1;
               playLaunchSound();
             } else if (fire.hold && fire.delay > 0) {
@@ -954,7 +954,7 @@
           }
 
           // Si hay “supprise” y se han detenido 10 cohetes, muestra texto
-          if (supprise && onHold === 10) {
+          if (supprise && onHold === 30) {
             supprise = false;
             // Si quieres lanzar el texto, descomenta:
             // setTimeout(initText, 3000);
